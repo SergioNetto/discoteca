@@ -91,13 +91,13 @@ public class Discoteca {
         Scanner sc = new Scanner(System.in);
         System.out.print("Digite o nome da banda: ");
         String banda=sc.nextLine();
-        for (int i = 0; i < 10; i++) {
-            if(arquivo[i]==null) break;
-            if(arquivo[i].getNomeBanda().equals(banda)){
-                arquivo[i].imprimeBanda(arquivo[i]);
+        for (Banda obj : arquivo) {
+            if(obj!=null){
+                if(obj.getNomeBanda().equals(banda)){
+                obj.imprimeBanda(obj);
                 return;
-            }    
-            
+                }
+            }   
         }
         System.out.println("Banda não encontrada");    
     }

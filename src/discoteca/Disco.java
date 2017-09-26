@@ -18,14 +18,12 @@ public class Disco {
     
     public void imprimeDisco(Disco disco){
         System.out.println("-------------------------------");
-        int tam = disco.musicas.length;
-        System.out.println(tam);
-        int cont=0;
-        do{            
-            System.out.print("Faixa: " + disco.musicas[cont].getFaixa());
-            System.out.println("   Nome: " + disco.musicas[cont].getNomeMusica());
-            cont++;
-        }while (cont<tam);      
+        for (Musica obj : musicas) {
+            if(obj!=null){
+                System.out.print("Faixa: " + obj.getFaixa());
+                System.out.println("   Nome: " + obj.getNomeMusica());
+            }
+        }
     }
 
     public int getAno() {
