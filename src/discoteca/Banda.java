@@ -17,15 +17,7 @@ public class Banda {
         System.out.println("-------------------------------");                
         System.out.println("-------------------------------");
         System.out.println("Banda: "+(banda.getNomeBanda()));
-        /*int tam = banda.discos.length;
-        int cont=0;
-        do{
-            System.out.println("-------------------------------");
-            System.out.println("Ano: " + banda.discos[cont].getAno() + "   Disco: " + banda.discos[cont].getNomeDisco());
-            banda.discos[cont].imprimeDisco(banda.discos[cont]);
-            cont++;
-        }while (cont<tam);*/
-        
+      
         for (Disco obj : discos) {
             if (obj!=null){
                 System.out.println("-------------------------------");

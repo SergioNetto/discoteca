@@ -61,21 +61,18 @@ public class Discoteca {
             System.out.print("Digite o numero de discos: ");
             int numDisco = Integer.parseInt(sc.nextLine());
             
-            for (int j = 0; j < numDisco; j++) {
-                novoDisco = new Disco[numDisco];
+            novoDisco = new Disco[numDisco];
+            for (int j = 0; j < numDisco; j++) {                
                 novoDisco[j] = new Disco();
-                
                 System.out.print("Digite o ano do disco: ");
                 novoDisco[j].setAno(Integer.parseInt(sc.nextLine()));
                 System.out.print("Digite o nome do disco: ");
                 novoDisco[j].setNomeDisco(sc.nextLine());
                 
-                
                 System.out.print("Digite o numero de faixas do disco: ");
                 int numFaixas = Integer.parseInt(sc.nextLine());
-                
-                for (int k = 0; k < numFaixas; k++) {
-                    musicas = new Musica[numFaixas];
+                musicas = new Musica[numFaixas];
+                for (int k = 0; k < numFaixas; k++) {                    
                     musicas[k] = new Musica();                   
                     musicas[k].setFaixa(k+1);
                     System.out.print("Digite o nome da musica da faixa "+musicas[k].getFaixa()+": ");
